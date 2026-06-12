@@ -26,6 +26,7 @@ body {
 }
 h1 { font-size: 28px; line-height: 1.25; }
 h2 { font-size: 20px; margin-top: 2em; }
+h3 { font-size: 17px; margin-top: 1.5em; }
 a { color: var(--link); }
 strong { font-weight: 650; }
 .muted { color: var(--muted); font-size: 14px; }
