@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# /privacy and /support are intentionally unlisted via their own
+# <meta name="robots" content="noindex, nofollow"> tags. They are NOT
+# disallowed here on purpose: a crawler must be able to fetch them to
+# see and honor that noindex.
+
+Sitemap: https://gostoragecleaner.app/sitemap.xml
