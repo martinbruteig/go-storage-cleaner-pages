@@ -80,4 +80,4 @@ curl -I https://go-storage-cleaner.com/       # expect 301 -> gostoragecleaner.a
 
 ---
 
-GO Storage Cleaner is an unofficial companion utility. It is not affiliated with, endorsed by, or sponsored by Niantic, Nintendo, The Pokémon Company, Game Freak, or Pokémon GO.
+GO Storage Cleaner is an independent, fan-made utility. It is not affiliated with, endorsed by, or sponsored by the makers of the games it works alongside.
