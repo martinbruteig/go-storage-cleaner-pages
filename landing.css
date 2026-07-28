@@ -118,6 +118,17 @@ h2 {
   color: var(--muted);
   font-size: 13.5px;
 }
+.store-badge {
+  display: inline-block;
+  line-height: 0;
+}
+.store-badge img {
+  width: 180px;
+  height: auto;
+}
+.store-badge:hover {
+  opacity: 0.85;
+}
 
 /* ---- Two-step cards (equal height via grid) ---- */
 .steps {
