@@ -46,7 +46,8 @@ a:hover { text-decoration: underline; }
 .accent { color: var(--accent); }
 
 /* ---- Vertical rhythm ---- */
-section { padding: 46px 0; }
+/* section.wrap, so .wrap's side padding does not reset the vertical padding. */
+section.wrap { padding: 46px 24px; }
 
 h2 {
   font-size: clamp(24px, 4vw, 30px);
@@ -184,6 +185,71 @@ h2 {
   font-size: 15px;
 }
 
+/* ---- Example search string ---- */
+.string-demo {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+}
+.string-label { font-weight: 650; margin-bottom: 10px; }
+.string-box {
+  display: block;
+  background: #050b18;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font: 13.5px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: #e8eaed;
+  overflow-wrap: anywhere;
+}
+.string-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  list-style: none;
+  counter-reset: step;
+  margin: 18px 0 0;
+  padding: 0;
+}
+.string-steps li {
+  counter-increment: step;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+.string-steps li::before {
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 7px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 13px;
+}
+.string-steps strong { color: var(--text); }
+.string-note { margin: 16px 0 0; color: var(--muted); font-size: 13.5px; }
+
+/* ---- FAQ ---- */
+.faq { max-width: 720px; margin: 20px auto 0; }
+.faq details { border-bottom: 1px solid var(--border); }
+.faq summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-weight: 600;
+}
+.faq p { margin: 0 0 18px; color: var(--muted); font-size: 15.5px; }
+
+/* ---- Closing call to action ---- */
+.cta { text-align: center; }
+
 /* ---- Features (two balanced columns) ---- */
 .features {
   display: grid;
@@ -265,7 +331,7 @@ footer .disclaimer {
   .shots { grid-template-columns: repeat(2, 1fr); max-width: 560px; margin: 0 auto; }
 }
 @media (max-width: 560px) {
-  .steps, .features, .safety .grid, .shots { grid-template-columns: 1fr; }
+  .steps, .features, .safety .grid, .shots, .string-steps { grid-template-columns: 1fr; }
   .shots { max-width: 360px; }
   .hero { padding-top: 56px; }
 }

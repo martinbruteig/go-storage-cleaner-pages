@@ -14,9 +14,95 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="GO Storage Cleaner — Safe cleanup for GO">
   <meta property="og:description" content="Generate conservative cleanup search strings with a Protect first, Clean second workflow. No login, no account access, no automation.">
-  <meta property="og:image" content="https://gostoragecleaner.app/assets/app-icon.png">
+  <meta property="og:image" content="https://gostoragecleaner.app/assets/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://gostoragecleaner.app/">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="apple-itunes-app" content="app-id=6781333023">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GO Storage Cleaner",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "A careful storage cleanup helper for Pokémon GO. Protect what you want to keep first, then review transfer candidates with conservative search strings you copy and paste yourself.",
+    "url": "https://gostoragecleaner.app/",
+    "downloadUrl": "https://apps.apple.com/app/go-storage-cleaner/id6781333023",
+    "image": "https://gostoragecleaner.app/assets/app-icon.png",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aksjefokus AS"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "2.99",
+      "highPrice": "29.99",
+      "offerCount": 3
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does GO Storage Cleaner access my Pokémon GO account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. There is no login and no connection to the game. The app only generates search strings that you copy and paste into Pokémon GO yourself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it transfer Pokémon for me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The final search shows transfer candidates for you to review. Every transfer is your own decision, made manually in the game."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The app is free to download. Generating search strings requires Pro: $2.99 per month, $14.99 per year, or $29.99 as a one-time purchase (US prices; local prices are shown in the App Store)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I have to create tags in Pokémon GO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Tags give the most thorough protection, but Quick Clean works without them: you favorite what you want to keep, and favorites are always left out of the review list."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which language does it use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "English. The app is in English, and the search strings use English search keywords, so set the game language to English when you paste them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which devices does it run on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "iPhone. GO Storage Cleaner is made for iPhone and is available in the App Store."
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="landing.css">
 </head>
@@ -33,7 +119,7 @@
       <a class="store-badge" href="https://apps.apple.com/app/go-storage-cleaner/id6781333023">
         <img src="assets/app-store-badge.svg" alt="Download GO Storage Cleaner on the App Store" width="180" height="60">
       </a>
-      <p class="fineprint">Free to download. Pro is required to generate cleanup search strings.</p>
+      <p class="fineprint">For iPhone · Free to download. Generating search strings requires Pro:<br>$2.99/month, $14.99/year or $29.99 once (US prices).</p>
     </div>
   </header>
 
@@ -53,6 +139,21 @@
           <h3>Clean second</h3>
           <p>Then it generates conservative search strings you copy and paste into Pokémon GO. You always review the results manually before transferring anything.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>What you get</h2>
+      <p class="section-sub">A search string built from your choices. Copy it, paste it into the search bar in Pokémon GO, and review what shows up.</p>
+      <div class="string-demo">
+        <div class="string-label">Review transfer candidates</div>
+        <code class="string-box">0*,1*,2*&amp;!#SAFE_RARE&amp;!#SAFE_PVP&amp;!#SAFE_RAID&amp;…&amp;!favorite&amp;!shiny&amp;!legendary&amp;!lucky&amp;…</code>
+        <ol class="string-steps">
+          <li><strong>Copy</strong> the string in the app</li>
+          <li><strong>Paste</strong> it into the search bar in Pokémon GO</li>
+          <li><strong>Review</strong> the candidates before you transfer anything</li>
+        </ol>
+        <p class="string-note">Shortened example. Everything you tagged or favorited is left out, along with shinies, legendaries, luckies and other rare categories.</p>
       </div>
     </section>
 
@@ -86,6 +187,7 @@
       <p class="section-sub">A deliberately cautious workflow, built around not losing anything by accident.</p>
       <ul class="features">
         <li>Conservative cleanup workflow</li>
+        <li>Quick Clean: favorites instead of tags</li>
         <li>Protect First / Clean Second structure</li>
         <li>Existing tag protection</li>
         <li>PvP protection for Great, Ultra, Master &amp; Little Cup</li>
@@ -93,7 +195,6 @@
         <li>Raid protection with selectable IV strictness</li>
         <li>XP evolve protection</li>
         <li>Rare / event / background Pokémon protection</li>
-        <li>Copy &amp; paste search strings</li>
         <li>No login · no account access · no automation</li>
       </ul>
     </section>
@@ -121,6 +222,44 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Does GO Storage Cleaner access my Pokémon GO account?</summary>
+          <p>No. There is no login and no connection to the game. The app only generates search strings that you copy and paste into Pokémon GO yourself.</p>
+        </details>
+        <details>
+          <summary>Does it transfer Pokémon for me?</summary>
+          <p>No. The final search shows transfer candidates for you to review. Every transfer is your own decision, made manually in the game.</p>
+        </details>
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>The app is free to download. Generating search strings requires Pro: $2.99 per month, $14.99 per year, or $29.99 as a one-time purchase (US prices; local prices are shown in the App Store).</p>
+        </details>
+        <details>
+          <summary>Do I have to create tags in Pokémon GO?</summary>
+          <p>No. Tags give the most thorough protection, but Quick Clean works without them: you favorite what you want to keep, and favorites are always left out of the review list.</p>
+        </details>
+        <details>
+          <summary>Which language does it use?</summary>
+          <p>English. The app is in English, and the search strings use English search keywords, so set the game language to English when you paste them.</p>
+        </details>
+        <details>
+          <summary>Which devices does it run on?</summary>
+          <p>iPhone. GO Storage Cleaner is made for iPhone and is available in the App Store.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap cta">
+      <h2>Storage full again?</h2>
+      <p class="section-sub">Protect first, then clean with a clear head.</p>
+      <a class="store-badge" href="https://apps.apple.com/app/go-storage-cleaner/id6781333023">
+        <img src="assets/app-store-badge.svg" alt="Download GO Storage Cleaner on the App Store" width="180" height="60">
+      </a>
     </section>
 
   </main>
