@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GO Storage Cleaner — Pokémon GO storage cleanup search strings</title>
-  <meta name="description" content="Pokémon GO storage full? GO Storage Cleaner builds conservative search strings so you can protect PvP, raid and rare Pokémon first, then review what to transfer.">
+  <meta name="description" content="Pokémon GO storage full? GO Storage Cleaner builds conservative search strings that leave your PvP, raid and rare Pokémon out, so you only review what you can let go of.">
 
   <link rel="canonical" href="https://gostoragecleaner.app/">
 
@@ -13,7 +13,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="GO Storage Cleaner — Pokémon GO storage cleanup search strings">
-  <meta property="og:description" content="Generate conservative cleanup search strings with a Protect first, Clean second workflow. No login, no account access, no automation.">
+  <meta property="og:description" content="Generate conservative cleanup search strings that leave your keepers out by themselves. No tags to create, no login, no account access, no automation.">
   <meta property="og:image" content="https://gostoragecleaner.app/assets/share-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -29,7 +29,7 @@
     "name": "GO Storage Cleaner",
     "operatingSystem": "iOS",
     "applicationCategory": "UtilitiesApplication",
-    "description": "A careful storage cleanup helper for Pokémon GO. Protect what you want to keep first, then review transfer candidates with conservative search strings you copy and paste yourself.",
+    "description": "A careful storage cleanup helper for Pokémon GO. It builds conservative search strings that leave your keepers out, and you copy, paste and review the transfer candidates yourself.",
     "url": "https://gostoragecleaner.app/",
     "downloadUrl": "https://apps.apple.com/app/go-storage-cleaner/id6781333023",
     "image": "https://gostoragecleaner.app/assets/app-icon.png",
@@ -81,7 +81,7 @@
         "name": "Do I have to create tags in Pokémon GO?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Tags give the most thorough protection, but Quick Clean works without them: you favorite what you want to keep, and favorites are always left out of the review list."
+          "text": "No. The search strings leave your keepers out by themselves: favorites, shinies, legendaries, luckies, hundos and other rare or invested Pokémon never show up as candidates. If you already use tags, you can add them as extra exclusions."
         }
       },
       {
@@ -114,8 +114,8 @@
         <img class="hero-icon" src="assets/app-icon-clean.png" alt="GO Storage Cleaner app icon">
       </div>
       <h1><span class="accent">GO</span> Storage Cleaner</h1>
-      <p class="tagline">Protect your Pokémon <span class="accent">first</span>, then clean <span class="accent">safely</span>.</p>
-      <p class="lede">A careful storage cleanup helper for Pokémon GO. Protect what you're most afraid of losing — then review transfer candidates with confidence.</p>
+      <p class="tagline">Your keepers stay <span class="accent">out</span>. You clean <span class="accent">safely</span>.</p>
+      <p class="lede">A careful storage cleanup helper for Pokémon GO. It leaves out what you're most afraid of losing, so you can review transfer candidates with confidence.</p>
       <a class="store-badge" href="https://apps.apple.com/app/go-storage-cleaner/id6781333023">
         <img src="assets/app-store-badge.svg" alt="Download GO Storage Cleaner on the App Store" width="180" height="60">
       </a>
@@ -131,13 +131,13 @@
       <div class="steps">
         <div class="step">
           <span class="num">1</span>
-          <h3>Protect first</h3>
-          <p>Before you review anything, lock down the Pokémon you care about — PvP candidates, raid attackers, shinies, rare and event Pokémon, background Pokémon, favorites and tagged groups.</p>
+          <h3>Tell it how you play</h3>
+          <p>Pick your playstyles and how careful the cleanup should be. That is the whole setup: there are no tags to create. Shinies, legendaries, luckies, hundos, rare and event Pokémon, background Pokémon and favorites are always left out.</p>
         </div>
         <div class="step">
           <span class="num">2</span>
-          <h3>Clean second</h3>
-          <p>Then it generates conservative search strings you copy and paste into Pokémon GO. You always review the results manually before transferring anything.</p>
+          <h3>Paste and review</h3>
+          <p>It generates conservative search strings you copy and paste into Pokémon GO. If you play PvP, the best IV spreads of each species are left out too. You always review the results manually before transferring anything.</p>
         </div>
       </div>
     </section>
@@ -147,37 +147,43 @@
       <p class="section-sub">A search string built from your choices. Copy it, paste it into the search bar in Pokémon GO, and review what shows up.</p>
       <div class="string-demo">
         <div class="string-label">Review transfer candidates</div>
-        <code class="string-box">0*,1*,2*&amp;!#SAFE_RARE&amp;!#SAFE_PVP&amp;!#SAFE_RAID&amp;…&amp;!favorite&amp;!shiny&amp;!legendary&amp;!lucky&amp;…</code>
+        <code class="string-box">0*,1*,2*&amp;!favorite&amp;!defender&amp;!shiny&amp;!legendary&amp;!mythical&amp;…&amp;!shadow&amp;!lucky&amp;…&amp;!4*&amp;…</code>
         <ol class="string-steps">
           <li><strong>Copy</strong> the string in the app</li>
           <li><strong>Paste</strong> it into the search bar in Pokémon GO</li>
           <li><strong>Review</strong> the candidates before you transfer anything</li>
         </ol>
-        <p class="string-note">Shortened example. Everything you tagged or favorited is left out, along with shinies, legendaries, luckies and other rare categories.</p>
+        <p class="string-note">Shortened example. Favorites are left out, along with shinies, legendaries, luckies, hundos and other rare categories. With the PvP playstyle, likely PvP keepers are left out as well.</p>
       </div>
     </section>
 
     <section class="wrap">
       <h2>See the workflow</h2>
-      <p class="section-sub">A simple protect-first flow before you review transfer candidates.</p>
+      <p class="section-sub">Two choices, then your review strings.</p>
       <div class="shots">
         <figure class="shot">
           <div class="phone">
-            <img src="assets/screenshots/01-welcome-storage-full.png" alt="GO Storage Cleaner welcome screen — Storage full again?" loading="lazy">
+            <img src="assets/screenshots/01-welcome.png" alt="GO Storage Cleaner welcome screen — Storage full again?" width="640" height="1391" loading="lazy">
           </div>
           <figcaption>Start with the storage problem</figcaption>
         </figure>
         <figure class="shot">
           <div class="phone">
-            <img src="assets/screenshots/02-protect-playstyles.png" alt="Choosing which Pokémon to protect by playstyle" loading="lazy">
+            <img src="assets/screenshots/02-playstyles.png" alt="Choosing playstyles" width="640" height="1391" loading="lazy">
           </div>
-          <figcaption>Choose what to protect</figcaption>
+          <figcaption>Tell it how you play</figcaption>
         </figure>
         <figure class="shot">
           <div class="phone">
-            <img src="assets/screenshots/03-cleanup-mode.png" alt="Choosing a cleanup mode — Safe, Balanced or Aggressive" loading="lazy">
+            <img src="assets/screenshots/03-cleanup-mode-v2.png" alt="Choosing a cleanup mode — Safe, Balanced or Aggressive" width="640" height="1391" loading="lazy">
           </div>
           <figcaption>Pick your cleanup mode</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="phone">
+            <img src="assets/screenshots/04-review-candidates.png" alt="Review candidates screen with the search strings to copy" width="640" height="1391" loading="lazy">
+          </div>
+          <figcaption>Copy your review strings</figcaption>
         </figure>
       </div>
     </section>
@@ -187,13 +193,13 @@
       <p class="section-sub">A deliberately cautious workflow, built around not losing anything by accident.</p>
       <ul class="features">
         <li>Conservative cleanup workflow</li>
-        <li>Quick Clean: favorites instead of tags</li>
-        <li>Protect First / Clean Second structure</li>
-        <li>Existing tag protection</li>
-        <li>PvP protection for Great, Ultra, Master &amp; Little Cup</li>
-        <li>PvP Paranoid Sweep</li>
+        <li>No tags to create: keepers are left out by the search strings</li>
+        <li>PvP protection for Little Cup, Great League &amp; Ultra League</li>
+        <li>PvP rank check for a single Pokémon</li>
+        <li>Clean one species after an event day</li>
+        <li>Review only recent catches, or the weakest first</li>
         <li>Raid protection with selectable IV strictness</li>
-        <li>XP evolve protection</li>
+        <li>Search tips: useful searches to copy</li>
         <li>Rare / event / background Pokémon protection</li>
         <li>No login · no account access · no automation</li>
       </ul>
@@ -241,7 +247,7 @@
         </details>
         <details>
           <summary>Do I have to create tags in Pokémon GO?</summary>
-          <p>No. Tags give the most thorough protection, but Quick Clean works without them: you favorite what you want to keep, and favorites are always left out of the review list.</p>
+          <p>No. The search strings leave your keepers out by themselves: favorites, shinies, legendaries, luckies, hundos and other rare or invested Pokémon never show up as candidates. If you already use tags, you can add them as extra exclusions.</p>
         </details>
         <details>
           <summary>Which language does it use?</summary>
@@ -256,7 +262,7 @@
 
     <section class="wrap cta">
       <h2>Storage full again?</h2>
-      <p class="section-sub">Protect first, then clean with a clear head.</p>
+      <p class="section-sub">Clean with a clear head.</p>
       <a class="store-badge" href="https://apps.apple.com/app/go-storage-cleaner/id6781333023">
         <img src="assets/app-store-badge.svg" alt="Download GO Storage Cleaner on the App Store" width="180" height="60">
       </a>
